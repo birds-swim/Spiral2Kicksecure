@@ -38,8 +38,9 @@ I'll think of some others.
 - https://lxqt-project.org
 - https://liquorix.net
 - https://calamares.io
-- 
-- 
+- https://terminalsare.sexy
+- https://wiki.archlinux.org/
+- https://wiki.debian.org/
 - 
 - 
 - 
