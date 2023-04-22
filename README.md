@@ -23,7 +23,19 @@ To make my own SpiralLinux/Debian/Kicksecure "spin". Maybe if I had more free ti
 7.  This shell script assumes that you're installing onto bare metal and NOT a Virtual Machine. You'll have to change the shell script for Virtual Machines.
 
 # Special Thanks
-If the SpiralLinux project and the Kicksecure project didn't exist, then neither would this humble shell script. Please consider donating to either project. They make cool software.
+- https://www.debian.org
+- https://spirallinux.github.io
+- https://www.kicksecure.com
+- https://mullvad.net
+- https://cisofy.com/lynis
+- https://lxqt-project.org
+- https://liquorix.net
+- https://calamares.io
+- 
+- 
+- 
+- 
+- 
 
 # Closing
 Thanks for visiting a GitHub newborn's repo. Baby steps! One foot forward, and all that. If you have any problems, objections, comments, rants, praises, or suggestions, then please let me know.
