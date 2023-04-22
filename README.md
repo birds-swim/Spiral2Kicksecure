@@ -1,5 +1,5 @@
 # Spiral2Kicksecure
-An amatuer's attempt at bringing "hardened" security to the Debian desktop. Really just a bundle or collection of different third-party softwares into one shell script.
+An amatuer's attempt at bringing "hardened" security to their Debian desktop. Really just a bundle or collection of different third-party softwares into a few shell scripts.
 
 Repository Created:  2023.04.21
 
