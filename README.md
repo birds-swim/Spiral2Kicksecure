@@ -19,8 +19,15 @@ To make my own SpiralLinux/Debian/Kicksecure "spin". Maybe if I had more free ti
 3.  Dual core processor.
 4.  4 GB of RAM.
 5.  20 GB or 40 GB minimum disk space. 
-6.  Never switch to Debian's Testing or Unstable branches (Kicksecure depends on Debian Stable).
+6.  Never switch to Debian's Testing or Unstable branches (Kicksecure depends on Debian Stable). Sorry folks!
 7.  This shell script assumes that you're installing onto bare metal and NOT a Virtual Machine. You'll have to change the shell script for Virtual Machines.
+
+# Possible Nicknames/Codenames for this Project
+"Frankensense" --  a "Franken Debian" that has a spidy-sense for security. 
+"Qt Neon" -- my attempt to showoff how useful and gorgeous a lightweight and Qt-centric desktop experience could be with LXQt.
+"Citadel"
+"Fortress Linux"
+I'll think of some others.
 
 # Special Thanks
 - https://www.debian.org
