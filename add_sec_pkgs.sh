@@ -16,10 +16,21 @@ sudo apt -Vy --no-install-recommends install lynis opensnitch usbguard debsecan 
 ###-----It failed to install with a dpkg error, so I removed Samhain. I do not have time to toubleshoot why it didn't work.
 #sudo apt -V install samhain
 
-# Either Kicksecure's LKRG or Debian's hardening-runtime package
-#sudo apt -Vy install lkrg
-#sudo apt -Vy install hardening-runtime
+# Debian's hardening-runtime package:
+# Please compare hardening-runtime VS. LKRG
+# https://salsa.debian.org/corsac/hardening-runtime
+# https://lkrg.org/
+sudo apt -Vy
 
+
+
+###--------------------KICKSECURE STUFF-------------------------##
+####------Kicksecure's hardened-kernel & LKRG is currently for testers only. https://www.kicksecure.com/wiki/Hardened-kernel 
+#sudo apt -Vy install lkrg 
+#sudo apt -Vy install hardened-kernel
+###-------------------------------------------------------------##
+
+###-------------------------HBLOCK------------------------------##
 # Install hblock for /etc/hosts content filtering!
 ###-------https://github.com/hectorm/hblock
 curl -o /tmp/hblock 'https://raw.githubusercontent.com/hectorm/hblock/v3.4.1/hblock' \
@@ -38,6 +49,7 @@ curl -o '/tmp/hblock.#1' 'https://raw.githubusercontent.com/hectorm/hblock/v3.4.
   && sudo systemctl daemon-reload \
   && sudo systemctl enable hblock.timer \
   && sudo systemctl start hblock.timer
+###-------------------------------------------------------------##
 
 #
 echo ""
