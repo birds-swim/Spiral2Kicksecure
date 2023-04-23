@@ -21,5 +21,10 @@ sudo apt -Vy --no-install-recommends install lynis opensnitch usbguard debsecan 
 #sudo apt -Vy install hardening-runtime
 
 #
+echo ""
+echo ""
+echo "Fail2Ban and endlessh need to be customized."
+echo ""
+sleep 2
 
 exit
