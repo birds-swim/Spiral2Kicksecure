@@ -9,6 +9,8 @@ echo ""
 echo "SPIRAL2KICKSECURE.sh"
 echo "Version 0.23.04.21 (beta)"
 echo ""
+echo "Kicksecure is made by the same smart folks who created Whonix. Whonix is based on Kicksecure."
+echo ""
 echo "Please enter your sudo password."
 sudo echo ""
 sleep 3
@@ -38,6 +40,9 @@ echo "Please read the bottom of Kicksecure's Installation Guide and consider ena
 echo "They are the same as Debian's normal repos (same software) except the onionized servers act as a Tor Hidden Service."
 echo "This allows for greater privacy, security, and anonymity for higher threat models."
 echo "NOTE:  Updates WILL BE noticably slower since the updates must travel over the Tor Network."
+echo ""
+echo "You can enable the Debian Onionized Repos by visiting:"
+echo "https://www.whonix.org/wiki/Onionizing_Repositories#Onionize_debian.list"
 sleep 2
 echo ""
 echo ""
