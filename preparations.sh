@@ -49,6 +49,9 @@ echo "deb [signed-by=/usr/share/keyrings/derivative.asc] tor+http://deb.w5j6stm7
 # Update the system
 apt update && apt -Vy full-upgrade
 
+# Gotta grab neofetch
+apt -Vy install neofetch
+
 # Tell the user the preparations are done and reboot is needed.
 echo ""
 echo ""
