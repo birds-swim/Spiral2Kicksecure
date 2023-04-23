@@ -41,7 +41,7 @@ I'll think of some others.
 - https://terminalsare.sexy
 - https://wiki.archlinux.org/
 - https://wiki.debian.org/
-- 
+- https://github.com/Bash-it/bash-it
 - 
 - 
 
