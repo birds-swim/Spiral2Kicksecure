@@ -17,7 +17,8 @@ echo "This shell script creates new groups and adds the 'user' to them. These gr
 echo "Additional repositories are also added. Kicksecure and Liquorix."
 
 # Update the system first
-apt update && apt -Vy full-upgrade && apt install --no-install-recommends sudo adduser #Just in case.
+apt update && apt -Vy full-upgrade
+apt -Vy --no-install-recommends install sudo adduser curl #Just in case.
 
 # Kicksecure: Create new groups and add the user to them. (https://www.kicksecure.com/wiki/Debian)
 /usr/sbin/addgroup --system console
