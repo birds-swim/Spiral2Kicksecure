@@ -8,19 +8,29 @@ sudo apt -Vy full-upgrade
 # I personally don't think debsecan is very useful to the average home user, as debsecan reports on information that you really don't have
 # any control over.  It's a nice information tool, but unless you're gonna help with security patches or be proactive with this information,
 # I'm not sure what you would do with debsecan. Leaving it in here because someone might find it useful.
-sudo apt -Vy --no-install-recommends install lynis opensnitch usbguard debsecan tiger rkhunter auditd fail2ban endlessh needrestart apt-listbugs 
-# Samhain is a File Integrity Monitoring (FIM) service and Host-based Intrusion Detection System (HIDS)
-# https://www.comparitech.com/net-admin/file-integrity-monitoring-tools/
-# https://www.la-samhna.de/samhain/
-###-----Samhain didn't work on my Spiral2Kick during the early stages of installation and setup of all software considered.
-###-----It failed to install with a dpkg error, so I removed Samhain. I do not have time to toubleshoot why it didn't work.
+sudo apt -Vy --no-install-recommends install lynis opensnitch debsecan tiger rkhunter auditd fail2ban endlessh needrestart apt-listbugs 
+
+###--------------------USBGUARD--------------------###
+## Please configure this after installing! Your keyboard or mouse might not work if you don't check the config.
+## https://usbguard.github.io/
+## https://wiki.archlinux.org/title/USBGuard
+#sudo apt -Vy --no-install-recommends usbguard
+
+
+###--------------------------------SAMHAIN--------------------------------------###
+## Samhain is a File Integrity Monitoring (FIM) service and Host-based Intrusion Detection System (HIDS)
+## https://www.comparitech.com/net-admin/file-integrity-monitoring-tools/
+## https://www.la-samhna.de/samhain/
+####-----Samhain didn't work on my Spiral2Kick during the early stages of installation and setup of all software considered.
+####-----It failed to install with a dpkg error, so I removed Samhain. I do not have time to toubleshoot why it didn't work (for me).
 #sudo apt -V install samhain
+###-----------------------------------------------------------------------------###
 
 # Debian's hardening-runtime package:
 # Please compare hardening-runtime VS. LKRG
 # https://salsa.debian.org/corsac/hardening-runtime
 # https://lkrg.org/
-sudo apt -Vy
+sudo apt -Vy hardening-runtime
 
 
 
@@ -29,6 +39,7 @@ sudo apt -Vy
 #sudo apt -Vy install lkrg 
 #sudo apt -Vy install hardened-kernel
 ###-------------------------------------------------------------##
+
 
 ###-------------------------HBLOCK------------------------------##
 # Install hblock for /etc/hosts content filtering!
@@ -54,7 +65,11 @@ curl -o '/tmp/hblock.#1' 'https://raw.githubusercontent.com/hectorm/hblock/v3.4.
 #
 echo ""
 echo ""
-echo "Fail2Ban, endlessh, and hblock (with systemd-timer) need to be customized."
+echo "Fail2Ban, endlessh, usbguard, and hblock (with systemd-timer) need to be customized."
+echo "ESPECIALLY USBGUARD (IF IT WAS INSTALLED)."
+echo "https://wiki.archlinux.org/title/USBGuard#Usage"
+echo "YOU HAVE BEEN WARNED."
+echo "Do that now before rebooting."
 echo ""
 sleep 2
 
