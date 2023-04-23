@@ -34,8 +34,17 @@ sleep 5
 
 # Tell the user to reboot
 echo ""
-echo "Please reboot your system."
-echo ""
+echo "Please read the bottom of Kicksecure's Installation Guide and consider enabling/switching to Debian's Onion Repositories."
+echo "They are the same as Debian's normal repos (same software) except the onionized servers act as a Tor Hidden Service."
+echo "This allows for greater privacy, security, and anonymity for higher threat models."
+echo "NOTE:  Updates WILL BE noticably slower since the updates must travel over the Tor Network."
 sleep 2
+echo ""
+echo ""
+echo "ATTENTION:  A reboot of your machine is required. Please save your work, and then reboot your machine."
+echo ""
+sleep 3
+echo "Thank you for using my shell script"
+sleep 1
 
 exit
