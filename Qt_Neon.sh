@@ -21,6 +21,30 @@ echo ""
 # Update the system
 sudo apt update && sudo apt -Vy full-upgrade
 
+##---------------------------------------------------------##
+#     COMMAND LINE TOOLS, BASH GOODIES, AND OTHER TWEAKS    #
+##---------------------------------------------------------##
+
+# Command line tools and bash goodies (https://terminalsare.sexy)
+sudo apt -Vy --no-install-recommends fzf hstr neofetch mc bpytop micro
+###---------Bash-it (https://github.com/Bash-it/bash-it)
+echo "Installing Bash-it"
+git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it && chmod -v +x ~/.bash_it/install.sh && bash ~/.bash_it/install.sh
+###---------Liquidprompt (https://github.com/nojhan/liquidprompt)
+echo "Installing Liquidprompt"
+sudo apt -Vy install liquidprompt && liquidprompt_activate && source .bashrc
+echo "Please read the Liquidpromt docs here:"
+echo "https://liquidprompt.readthedocs.io/en/latest/overview.html"
+echo ""
+###---------Deb-Get
+curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | sudo -E bash -s install deb-get
+
+
+
+
+
+
+
 
 
 
