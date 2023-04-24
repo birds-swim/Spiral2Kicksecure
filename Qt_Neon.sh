@@ -38,13 +38,23 @@ echo "https://liquidprompt.readthedocs.io/en/latest/overview.html"
 echo ""
 ###---------Deb-Get
 curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | sudo -E bash -s install deb-get
+###---------APT Tweaks:
+sudo apt -Vy install apt-config-icons apt-transport-tor apt-listbugs
+
+
+###---------------------------------------------------------------###
+#         LXQt COMPONENTS, AND WM TWEAKS
+###---------------------------------------------------------------###
+#-----LXQt STUFF:
+sudo apt -Vy --no-install-recommends install 
+#-----KWin Stuff:
+sudo apt -Vy --no-install-recommends install 
+#-----Openbox + Picom + Other Goodies
+sudo apt -Vy --no-install-recommends install qt5ct qt5-style-kvantum qt5-style-kvantum-themes picom
 
 
 
 
 
 
-
-
-
-
+exit
